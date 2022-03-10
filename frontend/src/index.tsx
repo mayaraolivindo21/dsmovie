@@ -6,7 +6,7 @@ import './index.css';
 import App from './App';
 
 
-ReactDOM.render(
+ReactDOM.render( //comando que acessa o root que está no html 
   <React.StrictMode>
     <App />
   </React.StrictMode>,

@@ -1,20 +1,13 @@
-import{ReactComponent as GithubIcon} from './assets/img/github.svg'
-function App() {
-  return (
-    <header>
-      <nav>
-        <div>
-          <h1>DSMovie</h1>
-          <a href="https://github.com/mayaraolivindo21"></a>
-        
-        <div>
-          <GithubIcon/>
+//o comando abaixo parece mas não éw um html. 
+//trata-se de um formato específico chamaod JSX
 
-          <p>/devsuperior</p>
-        </div>
-        </div>
-      </nav>
-    </header>
+import Navbar from "./components/Navbar";
+
+// dentro dele podemos colocar códigos react para rodar
+function App() {  //a função do react que é um componente
+  return (
+ 
+    <Navbar/>
   );
 }
 
