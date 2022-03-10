@@ -1,13 +1,25 @@
-//o comando abaixo parece mas não éw um html. 
-//trata-se de um formato específico chamaod JSX
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} 
 
-import Navbar from "./components/Navbar";
+from "react-router-dom";
+import Listing from 'pages/Listing';
+import Form from 'pages/Form';
+import Navbar from "components/Navbar";
 
-// dentro dele podemos colocar códigos react para rodar
-function App() {  //a função do react que é um componente
+function App() {
   return (
- 
-    <Navbar/>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Listing />} />
+        <Route path="/form">
+          <Route path=":movieId" element={<Form />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
