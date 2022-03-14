@@ -51,13 +51,6 @@ function Listing() {
 
                     )}
 
-
-                    =
-
- 
-
-
-
                 </div>
             </div>
 
